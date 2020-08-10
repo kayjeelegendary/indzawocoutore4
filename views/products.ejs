@@ -1,0 +1,15 @@
+<%- include('_layouts/header'); %>
+    <div class="row">
+        <% products.map(function(product) { %>
+            <div class="col-md-3">
+                <img src="<%= product.image %>" width="100%" height="100%">
+                <h3>
+                    <%= product.title %>
+                </h3>
+                <p>$<%= product.price %></p>
+                <a href="/products/<%= product.category %>/<%= product._id %>">See Details</a><br>
+                <a href="/cart/add/<%= product._id %>">Add To Cart</a>
+            </div>
+        <% }); %>
+    </div>
+<%- include('_layouts/footer'); %>
