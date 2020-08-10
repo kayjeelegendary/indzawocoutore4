@@ -12,7 +12,7 @@ const passport = require('passport');
 const authenticated = require('./config/auth');
 
 //Set connection to mongoose
-const mongoDB = 'mongodb://uhq3eksvtmgg0ruub7m4:EHsym3vQnmSBxdnRl32X@btbmpzr6nehyrko-mongodb.services.clever-cloud.com:27017/btbmpzr6nehyrko';
+const mongoDB = 'mongodb://ujygmn5jhrphhx5mhbiu:zp4jLc2r7DAMgYu3y9bp@b9wdgl7qmj5svec-mongodb.services.clever-cloud.com:27017/b9wdgl7qmj5svec';
 mongoose.connect(mongoDB);
 // Get Mongoose to use the global promise library
 mongoose.Promise = global.Promise;
